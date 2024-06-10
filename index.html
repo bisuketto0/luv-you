@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #292929;
+    }
+
+    .swiper {
+      width: 400px;
+      height: 100vh;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: blue;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 30px;
+
+      background-color: #dbdbdb;
+      /* padding: 15px; */
+      /* padding-bottom: 60px; */
+    }
+
+    img {
+      object-fit: contain;
+      width: 85%;
+      /* height: 100%; */
+    }
+
+    .card > div {
+      height: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="swiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="http://127.0.0.1:5501/images/1.JPG" alt="">
+          <div>Hello</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="http://127.0.0.1:5501/images/1.JPG" alt="">
+          <div>Hello</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="http://127.0.0.1:5501/images/1.JPG" alt="">
+          <div>Hello</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  });  
+</script>
+
+</html>
